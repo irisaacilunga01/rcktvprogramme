@@ -1,7 +1,6 @@
 import React from "react";
 import { sql } from "@vercel/postgres";
 import { Category } from "@/lib/types";
-// import { categories as rows } from "@/lib/data";
 import { DataTable } from "./dataTable";
 import { ModeToggle } from "@/components/toggletheme";
 

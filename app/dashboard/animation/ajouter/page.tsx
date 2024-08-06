@@ -1,11 +1,11 @@
 import React from "react";
 import { Formulaire } from "../form";
-import { categories, presentateurs, programmes } from "@/lib/data";
 import { sql } from "@vercel/postgres";
 import { Presentateur, Programme } from "@/lib/types";
 
 async function Page() {
-  const { rows: programmes } = await sql<Programme>`SELECT id,titre from programmes`;
+  const { rows: programmes } =
+    await sql<Programme>`SELECT id,titre from programmes`;
   const { rows: presentateurs } =
     await sql<Presentateur>`SELECT id,nom from presentateurs`;
   return (
